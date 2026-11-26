@@ -1,0 +1,43 @@
+/* ONE style file used by every page */
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4fbff; color: #23364a; }
+a { text-decoration: none; color: inherit; }
+h1, h2 { color: #3a9fd6; }
+
+/* Top bar */
+.topbar { position: sticky; top: 0; z-index: 10; background: white; padding: 10px 20px; display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 8px #0003; flex-wrap: wrap; }
+.logo { font-weight: bold; font-size: 20px; color: #3a9fd6; }
+.home { background: #ffd23f; padding: 6px 16px; border-radius: 20px; font-weight: bold; margin-right: 20px; }
+.links a { margin-right: 12px; }
+.links a:hover { color: #ff7a59; }
+.plan { background: #ff7a59; color: white; padding: 8px 16px; border-radius: 20px; margin-left: auto; }
+
+/* Sidebar + main */
+.page { display: flex; }
+.sidebar { width: 260px; background: white; padding: 15px; position: sticky; top: 60px; height: 100vh; overflow: auto; }
+.sidebar a { display: block; padding: 8px; border-radius: 10px; }
+.sidebar a:hover { background: #d8f3dc; }
+.sidebar a.active { background: #ff7a59; color: white; }   /* the page you are on */
+.main { flex: 1; padding: 20px; }
+
+/* Hero */
+.hero { background: #8fd6f5; text-align: center; padding: 60px 20px; color: white; border-radius: 20px; }
+.hero h1 { color: white; font-size: 36px; margin: 0 0 10px; }
+.button { display: inline-block; background: #ff7a59; color: white; padding: 10px 20px; border-radius: 20px; margin: 5px; }
+
+/* Cards and boxes */
+.photo { background: #ffe58a; text-align: center; font-size: 80px; padding: 40px; border-radius: 20px; }
+.note { background: #fff6d6; padding: 8px; border-radius: 8px; font-size: 14px; }
+.boxes { display: flex; flex-wrap: wrap; gap: 15px; }
+.box { background: white; padding: 15px; border-radius: 15px; width: 200px; box-shadow: 0 2px 8px #0002; }
+.green { background: #d8f3dc; padding: 20px; border-radius: 20px; }
+input, textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 2px solid #3a9fd6; border-radius: 10px; box-sizing: border-box; }
+button { background: #ff7a59; color: white; border: none; padding: 12px 24px; border-radius: 20px; }
+.footer { background: #23364a; color: white; text-align: center; padding: 25px; }
+.footer a { color: #ffd23f; margin: 0 6px; }
+
+/* Phones */
+@media (max-width: 800px) {
+  .page { display: block; }
+  .sidebar { width: auto; height: auto; position: static; }
+}
